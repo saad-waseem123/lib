@@ -1,0 +1,20 @@
+CREATE TABLE `services`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `title` VARCHAR(170) NOT NULL,
+    `excerpt` VARCHAR(255) NOT NULL,
+    `body` TEXT NOT NULL,
+    `client_name` VARCHAR(50) NOT NULL,
+    `category` VARCHAR(50) NOT NULL,
+    `value` VARCHAR(50) NOT NULL,
+    `img` VARCHAR(128) NOT NULL,
+    `gallary_imgs` VARCHAR(128) NOT NULL,
+    `is_featured` TINYINT(1) NOT NULL,
+    `related_service_ids` VARCHAR(128) NOT NULL,
+    `meta_title` VARCHAR(190) NOT NULL,
+    `meta_desc` TEXT NOT NULL,
+    `meta_keywords` TEXT NOT NULL,
+    `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `deleted_at` TIMESTAMP NULL,
+    PRIMARY KEY(`id`)
+);

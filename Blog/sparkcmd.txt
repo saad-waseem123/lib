@@ -1,0 +1,6 @@
+php spark make:model ServiceModel 
+
+goto model and change
+protected $protectFields        = true;
+to
+protected $protectFields        = false;
